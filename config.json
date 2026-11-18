@@ -1,0 +1,1591 @@
+{
+  "avvisiVoci": [
+    {
+      "name": "cancella",
+      "fields": [
+        {
+          "name": "criterio",
+          "type": 3,
+          "description": "criterio di rimozione",
+          "options": [
+            { "name": "C1 - Pagine o sottopagine vuote, di prova, senza senso, tautologiche (contenuto uguale o equivalente al titolo in termini di contenuto informativo), bufale o palesi stupidaggini", "value": "C1" },
+            { "name": "C2 - Pagine contenenti solo frasi offensive e/o volgari e/o comunque diffamatorie/denigratorie verso persone, aziende, istituzioni ed enti in generale", "value": "C2" },
+            { "name": "C3 - Pagine scritte in un italiano incomprensibile o in una lingua diversa dall'italiano, tradotte con sistemi di traduzione automatica o semi-automatica, oppure create tramite usi non ammessi di IA", "value": "C3" },
+            { "name": "C4 - Pagine dal contenuto palesemente non enciclopedico; pagine o immagini promozionali, per esempio costituite unicamente da collegamenti esterni (comprese Wikipedie in altre lingue) e/o spam che promuovono prodotti, servizi o persone (incluse note autopromozionali); curriculum vitae personali, specie se scritti in prima persona", "value": "C4" },
+            { "name": "C4+C13 - Pagine dal contenuto palesemente non enciclopedico e interamente costituite da testo in violazione di copyright", "value": "C4+C13" },
+            { "name": "C5 - Pagine orfane, con titolo sbagliato e dal contenuto identico o integrato in un'altra pagina già presente (i requisiti debbono essere tutti soddisfatti: se solo orfane vanno collegate, se solo con titolo errato vanno spostate a quello corretto, se solo identiche a un'altra vanno unite a quella; l'identità fra una voce-lista e una categoria non è motivo sufficiente di cancellazione)", "value": "C5" },
+            { "name": "C6 - Categorie senza voci, file o sottocategorie (con l'eccezione di alcune categorie di servizio opportunamente segnalate)", "value": "C6" },
+            { "name": "C7 - Pagine già cancellate per decisione della comunità e reinserite senza che siano stati superati i motivi che ne hanno comportato la cancellazione", "value": "C7" },
+            { "name": "C8 - Pagine provvisorie create per l'inversione di redirect", "value": "C8" },
+            { "name": "C9 - Redirect con errori di battitura nel titolo, redirect a pagine non esistenti, redirect non conformi alle linee guida; purché tali redirect siano orfani o i wikilink in entrata si debbano mantenere a prescindere dall'esistenza della pagina a cui puntano", "value": "C9" },
+            { "name": "C10 - Discussioni, sottopagine o editnotice di pagine cancellate, se il contenuto non presenta argomenti di valenza più generale", "value": "C10" },
+            { "name": "C11 - Immagini contemporaneamente doppie e orfane, oppure non funzionanti, vuote o già presenti su Wikimedia Commons", "value": "C11" },
+            { "name": "C12 - Immagini in evidente violazione di copyright", "value": "C12" },
+            { "name": "C13 - Pagine interamente costituite da testo in violazione di copyright", "value": "C13" },
+            { "name": "C14 - Immagini da verificare da oltre una settimana (fa fede l'avviso all'utente)", "value": "C14" },
+            { "name": "C15 - Pagine del namespace \"Utente:\" il cui titolo non corrisponde ad alcun utente registrato o integralmente non conformi all'uso appropriato", "value": "C15" },
+            { "name": "C16 - Pagine trasferite ad altri progetti, secondo procedura", "value": "C16" },
+            { "name": "C17 - Pagine e sottopagine del namespace \"Utente:\" la cui cancellazione è richiesta dall'utente stesso (esempio: \"Utente:Tizio/Sottopagina\"). Di regola le pagine del namespace \"Discussioni utente\" (ad.es. \"Discussioni utente:Tizio\") non possono essere cancellate ma solo archiviate", "value": "C17" },
+            { "name": "C18 - File orfani e non utili all'enciclopedia", "value": "C18" },
+            { "name": "C19 - Template obsoleti, sostituiti e orfani (i requisiti devono essere tutti soddisfatti)", "value": "C19" },
+            { "name": "C20 - File non liberi non rispettano l'EDP", "value": "C20" },
+            { "name": "C21 - Pagine di servizio provvisorie non più necessarie (sono incluse le sole pagine appositamente create con funzione provvisoria o i messaggi di sistema obsoleti; tutte le altre vanno archiviate come previsto o discusse caso per caso)", "value": "C21" },
+            { "name": "C22 - Bozze abbandonate dal contenuto insufficiente per un abbozzo", "value": "C22" }
+          ],
+          "required": true
+        }
+      ],
+      "subject": "+cancella subito",
+      "text": "{{cancella subito|$criterio$}}"
+    },
+    {
+      "name": "bozza",
+      "fields": [
+        {
+          "name": "criterio",
+          "type": 2,
+          "description": "criterio di rimozione",
+          "options": [
+            { "name": "B1 - Voce minimale da aiutare", "value": "B1" },
+            { "name": "B2 - Voce potenzialmente frutto di ricerca originale", "value": "B2" },
+            { "name": "B3 - Voce con traduzione automatica o incomprensibile", "value": "B3" },
+            { "name": "B4 - Voce promozionale o curricolare", "value": "B4" },
+            { "name": "B5 - Voce creata in conflitto di interessi", "value": "B5" },
+            { "name": "B6 - Voce creata in ambito scolastico o educativo", "value": "B6" },
+            { "name": "B7 - Voce spostata in bozza da cancellazione", "value": "B7" }
+          ],
+          "required": true
+        }
+      ],
+      "subject": "+sposta in bozza",
+      "text": "{{Sposta in Bozza|$criterio$}}"
+    },
+    {
+      "name": "pulire",
+      "fields": [
+        {
+          "name": "diff",
+          "type": 1,
+          "description": "versione da pulire",
+          "required": true
+        }
+      ],
+      "subject": "+richiesta pulizia",
+      "text": "{{RichiestaPulizia|$diff$}}"
+    },
+    {
+      "name": "fonti",
+      "fields": [
+        {
+          "name": "argomento",
+          "type": 1,
+          "description": "argomento della pagina",
+          "required": true
+        }
+      ],
+      "subject": "+F",
+      "text": "{{F|$argomento$|{{subst:#timel:F Y}}}}"
+    },
+    {
+      "name": "wikificare",
+      "fields": [
+        {
+          "name": "argomento",
+          "type": 1,
+          "description": "argomento della pagina",
+          "required": true
+        }
+      ],
+      "subject": "+W",
+      "text": "{{W|$argomento$|{{subst:#timel:F Y}}}}"
+    },
+    {
+      "name": "stub",
+      "fields": [
+        {
+          "name": "argomento",
+          "type": 1,
+          "description": "argomento della pagina",
+          "required": true
+        }
+      ],
+      "subject": "+S",
+      "text": "{{S|$argomento$}}"
+    },
+    {
+      "name": "NPOV",
+      "fields": [
+        {
+          "name": "motivo",
+          "type": 1,
+          "description": "motivazione",
+          "required": true
+        },
+        {
+          "name": "argomento",
+          "type": 1,
+          "description": "argomento della pagina",
+          "required": true
+        }
+      ],
+      "subject": "+P",
+      "text": "{{P|$motivo$|$argomento$|{{subst:#timel:F Y}}}}"
+    }
+  ],
+  "avvisiDiscussione": [
+    {
+      "name": "avvisi",
+      "options": [
+        {
+          "name": "Aiuto genere",
+          "fields": [
+            {
+              "name": "genere",
+              "type": 1,
+              "description": "specifica o dettaglio",
+              "required": false
+            }
+          ],
+          "subject": "Avviso",
+          "title": "Uso del genere nelle voci",
+          "text": "{{subst:Aiuto genere|$genere$}} --~~~~"
+        },
+        {
+          "name": "Aiuto A",
+          "fields": [],
+          "subject": "Avviso enciclopedicità",
+          "title": "Enciclopedicità",
+          "text": "{{subst:AiutoA}} --~~~~"
+        },
+        {
+          "name": "Aiuto E",
+          "fields": [],
+          "subject": "Avviso enciclopedicità",
+          "title": "Verifica di enciclopedicità",
+          "text": "{{subst:AiutoE}} --~~~~"
+        },
+        {
+          "name": "Aiuto F",
+          "fields": [],
+          "subject": "Avviso fonti",
+          "title": "Uso delle fonti",
+          "text": "{{subst:AiutoF}} --~~~~"
+        },
+        {
+          "name": "Aiuto W",
+          "fields": [],
+          "subject": "Avviso wikitribute",
+          "title": "Aiuto per la formattazione (wikificare)",
+          "text": "{{subst:AiutoW}} --~~~~"
+        },
+        {
+          "name": "Anteprima",
+          "fields": [],
+          "subject": "Uso del tasto anteprima",
+          "title": "Uso del tasto anteprima",
+          "text": "{{subst:Anteprima}} --~~~~"
+        },
+        {
+          "name": "Autobiografia",
+          "fields": [],
+          "subject": "Autobiografia",
+          "title": "Pagine autobiografiche",
+          "text": "{{subst:Autobiografia}} --~~~~"
+        },
+        {
+          "name": "Avviso commento",
+          "fields": [],
+          "subject": "Commenti nelle pagine",
+          "title": "Commenti nelle voci o discussioni",
+          "text": "{{subst:Avviso commento}} --~~~~"
+        },
+        {
+          "name": "Avviso evento futuro",
+          "fields": [],
+          "subject": "Evento futuro",
+          "title": "Informazioni su eventi futuri",
+          "text": "{{subst:Avviso evento futuro}} --~~~~"
+        },
+        {
+          "name": "Avviso firma non conforme",
+          "fields": [],
+          "subject": "Firma non conforme",
+          "title": "Firma non conforme alle linee guida",
+          "text": "{{subst:Avviso firma non conforme}} --~~~~"
+        },
+        {
+          "name": "Avviso localismo",
+          "fields": [],
+          "subject": "Localismo",
+          "title": "Punto di vista localistico",
+          "text": "{{subst:Avviso localismo}} --~~~~"
+        },
+        {
+          "name": "Avviso non hai firmato",
+          "fields": [],
+          "subject": "Firma mancante",
+          "title": "Mancata firma nei messaggi",
+          "text": "{{subst:Avviso non hai firmato}} --~~~~"
+        },
+        {
+          "name": "Avviso recentismo",
+          "fields": [],
+          "subject": "Recentismo",
+          "title": "Impostazione recentistica",
+          "text": "{{subst:Avviso recentismo}} --~~~~"
+        },
+        {
+          "name": "Avviso rimozione lista traduttori",
+          "fields": [],
+          "subject": "Traduzioni",
+          "title": "Rimozione attribuzione traduttori",
+          "text": "{{subst:Avviso rimozione lista traduttori}} --~~~~"
+        },
+        {
+          "name": "Avviso sport futuro",
+          "fields": [],
+          "subject": "Sport futuro",
+          "title": "Contenuti sportivi futuri",
+          "text": "{{subst:Avviso sport futuro}} --~~~~"
+        },
+        {
+          "name": "Avviso spostamento",
+          "fields": [
+            {
+              "name": "titolo",
+              "type": 1,
+              "description": "nuovo titolo o motivazione",
+              "required": false
+            }
+          ],
+          "subject": "Spostamento pagina",
+          "title": "Spostamento di pagina",
+          "text": "{{subst:Avviso spostamento|$titolo$}} --~~~~"
+        },
+        {
+          "name": "Avviso spostamento in Bozza",
+          "fields": [],
+          "subject": "Spostamento in bozza",
+          "title": "Voce spostata nel namespace Bozza",
+          "text": "{{subst:Avviso spostamento in Bozza}} --~~~~"
+        },
+        {
+          "name": "Avviso template deprecato",
+          "fields": [],
+          "subject": "Template deprecato",
+          "title": "Uso di template deprecato",
+          "text": "{{subst:Avviso template deprecato}} --~~~~"
+        },
+        {
+          "name": "Avviso WWE",
+          "fields": [],
+          "subject": "Wrestling",
+          "title": "Convenzioni di stile wrestling / WWE",
+          "text": "{{subst:Avviso WWE}} --~~~~"
+        },
+        {
+          "name": "Avviso IA",
+          "fields": [],
+          "subject": "Intelligenza artificiale",
+          "title": "Uso di intelligenza artificiale",
+          "text": "{{subst:AvvisoIA}} --~~~~"
+        },
+        {
+          "name": "Avviso IA sospetta",
+          "fields": [],
+          "subject": "Intelligenza artificiale",
+          "title": "Sospetto uso di IA nei contributi",
+          "text": "{{subst:AvvisoIA sospetta}} --~~~~"
+        },
+        {
+          "name": "Avviso nome file",
+          "fields": [],
+          "subject": "Nome file",
+          "title": "Convenzioni sui nomi dei file",
+          "text": "{{subst:AvvisoNomeFile}} --~~~~"
+        },
+        {
+          "name": "Avviso portale",
+          "fields": [],
+          "subject": "Portali",
+          "title": "Gestione dei portali",
+          "text": "{{subst:AvvisoPortale}} --~~~~"
+        },
+        {
+          "name": "Biblioteca Wikipedia richieste",
+          "fields": [],
+          "subject": "Biblioteca Wikipedia",
+          "title": "Richieste alla Biblioteca Wikipedia",
+          "text": "{{subst:Biblioteca Wikipedia richieste}} --~~~~"
+        },
+        {
+          "name": "Blocco nome utente",
+          "fields": [],
+          "subject": "Blocco utente",
+          "title": "Blocco per nome utente non conforme",
+          "text": "{{subst:Blocco nome utente}} --~~~~"
+        },
+        {
+          "name": "Bozza abbandonata cancellata",
+          "fields": [],
+          "subject": "Bozze",
+          "title": "Cancellazione bozza abbandonata",
+          "text": "{{subst:Bozza abbandonata cancellata}} --~~~~"
+        },
+        {
+          "name": "C/Avviso",
+          "fields": [],
+          "subject": "Cancellazione",
+          "title": "Avviso di cancellazione",
+          "text": "{{subst:C/Avviso}} --~~~~"
+        },
+        {
+          "name": "Cancellazione avviso utente",
+          "fields": [],
+          "subject": "Cancellazione",
+          "title": "Procedura di cancellazione",
+          "text": "{{subst:Cancellazione/avvisoutente}} --~~~~"
+        },
+        {
+          "name": "Cerca tu",
+          "fields": [],
+          "subject": "Fonti",
+          "title": "L'onere delle fonti spetta a chi inserisce",
+          "text": "{{subst:Cerca tu}} --~~~~"
+        },
+        {
+          "name": "Conto terzi",
+          "fields": [],
+          "subject": "Conflitto di interessi",
+          "title": "Modifiche su commissione o conto terzi",
+          "text": "{{subst:Conto terzi}} --~~~~"
+        },
+        {
+          "name": "Copiaincolla",
+          "fields": [],
+          "subject": "Copyright",
+          "title": "Violazione di copyright / Copia-incolla",
+          "text": "{{subst:Copiaincolla}} --~~~~"
+        },
+        {
+          "name": "Discussioni",
+          "fields": [],
+          "subject": "Uso delle discussioni",
+          "title": "Regole delle pagine di discussione",
+          "text": "{{subst:Discussioni}} --~~~~"
+        },
+        {
+          "name": "EDP Pagina Utente",
+          "fields": [],
+          "subject": "EDP",
+          "title": "Immagini EDP nella pagina utente",
+          "text": "{{subst:EDP Pagina Utente}} --~~~~"
+        },
+        {
+          "name": "EDP Utente",
+          "fields": [],
+          "subject": "EDP",
+          "title": "Uso delle immagini EDP",
+          "text": "{{subst:EDP Utente}} --~~~~"
+        },
+        {
+          "name": "Esito revisione bozza",
+          "fields": [],
+          "subject": "Bozze",
+          "title": "Esito della revisione della bozza",
+          "text": "{{subst:Esito revisione bozza}} --~~~~"
+        },
+        {
+          "name": "Falso amico",
+          "fields": [],
+          "subject": "Traduzioni",
+          "title": "Attenzione ai falsi amici nelle traduzioni",
+          "text": "{{subst:Falso amico}} --~~~~"
+        },
+        {
+          "name": "Grazie",
+          "fields": [],
+          "subject": "Ringraziamento",
+          "title": "Grazie per il contributo!",
+          "text": "{{subst:Grazie}} --~~~~"
+        },
+        {
+          "name": "In italiano",
+          "fields": [],
+          "subject": "Lingua italiana",
+          "title": "Scrivere in lingua italiana",
+          "text": "{{subst:In italiano}} --~~~~"
+        },
+        {
+          "name": "Inserimento immagini",
+          "fields": [],
+          "subject": "Immagini",
+          "title": "Inserimento corretto delle immagini",
+          "text": "{{subst:InserimentoImmagini}} --~~~~"
+        },
+        {
+          "name": "Invito archivio",
+          "fields": [],
+          "subject": "Archiviazione",
+          "title": "Invito ad archiviare la discussione",
+          "text": "{{subst:Invito archivio}} --~~~~"
+        },
+        {
+          "name": "Invito NPOV",
+          "fields": [],
+          "subject": "Punto di vista neutro",
+          "title": "Invito a mantenere un punto di vista neutro",
+          "text": "{{subst:InvitoNPOV}} --~~~~"
+        },
+        {
+          "name": "Avviso laboratorio grafico",
+          "fields": [],
+          "subject": "Laboratorio grafico",
+          "title": "Realizzazione grafica completata",
+          "text": "{{subst:Avviso realizzazione dal laboratorio grafico}} --~~~~"
+        },
+        {
+          "name": "No sandbox in discussioni",
+          "fields": [],
+          "subject": "Uso delle pagine",
+          "title": "Le discussioni non sono una sandbox",
+          "text": "{{subst:No sandbox in pagina discussioni}} --~~~~"
+        },
+        {
+          "name": "No sandbox in pagina utente",
+          "fields": [],
+          "subject": "Uso delle pagine",
+          "title": "La pagina utente non è una sandbox",
+          "text": "{{subst:No sandbox in pagina utente}} --~~~~"
+        },
+        {
+          "name": "Nome utente inappropriato",
+          "fields": [],
+          "subject": "Nome utente",
+          "title": "Nome utente non conforme alle linee guida",
+          "text": "{{subst:Nome utente inappropriato}} --~~~~"
+        },
+        {
+          "name": "NomeUtenteAt",
+          "fields": [],
+          "subject": "Nome utente",
+          "title": "Segnalazione nome utente",
+          "text": "{{subst:NomeUtenteAt}} --~~~~"
+        },
+        {
+          "name": "NomeUtenteMail",
+          "fields": [],
+          "subject": "Nome utente",
+          "title": "Comunicazione cambio nome utente",
+          "text": "{{subst:NomeUtenteMail}} --~~~~"
+        },
+        {
+          "name": "Non hai firmato",
+          "fields": [],
+          "subject": "Firma mancante",
+          "title": "Mancata firma",
+          "text": "{{subst:Non hai firmato}} --~~~~"
+        },
+        {
+          "name": "Non hai firmato 2",
+          "fields": [],
+          "subject": "Firma mancante",
+          "title": "Promemoria firma",
+          "text": "{{subst:Non hai firmato 2}} --~~~~"
+        },
+        {
+          "name": "Nuovo amministratore",
+          "fields": [],
+          "subject": "Congratulazioni",
+          "title": "Auguri per le nuove funzioni di amministratore",
+          "text": "{{subst:Nuovo amministratore}} --~~~~"
+        },
+        {
+          "name": "Nuovo arbitro",
+          "fields": [],
+          "subject": "Congratulazioni",
+          "title": "Auguri per l'elezione ad arbitro",
+          "text": "{{subst:Nuovo arbitro}} --~~~~"
+        },
+        {
+          "name": "Oggetto",
+          "fields": [],
+          "subject": "Oggetto delle modifiche",
+          "title": "Mancanza dell'oggetto nelle modifiche",
+          "text": "{{subst:Oggetto}} --~~~~"
+        },
+        {
+          "name": "Avviso file orfano",
+          "fields": [],
+          "subject": "File orfani",
+          "title": "Utilizzo di file orfani",
+          "text": "{{subst:Avviso file orfano}} --~~~~"
+        },
+        {
+          "name": "Overlinking",
+          "fields": [],
+          "subject": "Wikilink",
+          "title": "Eccesso di collegamenti interni (overlinking)",
+          "text": "{{subst:Overlinking}} --~~~~"
+        },
+        {
+          "name": "Pagina utente promozionale",
+          "fields": [],
+          "subject": "Pagina utente",
+          "title": "Uso promozionale della pagina utente",
+          "text": "{{subst:Pagina utente promozionale}} --~~~~"
+        },
+        {
+          "name": "Proposte commenti",
+          "fields": [],
+          "subject": "Proposte",
+          "title": "Commenti alle proposte",
+          "text": "{{subst:ProposteCommenti}} --~~~~"
+        },
+        {
+          "name": "Avviso riassegnazione",
+          "fields": [],
+          "subject": "Riassegnazione utenze",
+          "title": "Riassegnazione del nome utente",
+          "text": "{{subst:Avviso riassegnazione}} --~~~~"
+        },
+        {
+          "name": "Avviso riconferma",
+          "fields": [],
+          "subject": "Riconferma",
+          "title": "Procedura di riconferma",
+          "text": "{{subst:Avviso riconferma}} --~~~~"
+        },
+        {
+          "name": "Risoluzione conflitto",
+          "fields": [],
+          "subject": "Conflitti",
+          "title": "Risoluzione dei conflitti di edizione o di opinione",
+          "text": "{{subst:Risoluzione conflitto}} --~~~~"
+        },
+        {
+          "name": "Risposta",
+          "fields": [
+            {
+              "name": "testo",
+              "type": 1,
+              "description": "risposta",
+              "required": true
+            }
+          ],
+          "subject": "Risposta",
+          "title": "Risposta",
+          "text": "{{subst:Risposta|$testo$}} --~~~~"
+        },
+        {
+          "name": "Sii audace",
+          "fields": [],
+          "subject": "Linee guida",
+          "title": "Invito ad essere audaci nelle modifiche",
+          "text": "{{subst:Sii audace}} --~~~~"
+        },
+        {
+          "name": "Sockpuppet",
+          "fields": [],
+          "subject": "Utenze multiple",
+          "title": "Uso improprio di utenze multiple (sockpuppet)",
+          "text": "{{subst:Sockpuppet}} --~~~~"
+        },
+        {
+          "name": "Su Commons",
+          "fields": [],
+          "subject": "Wikimedia Commons",
+          "title": "File da caricare su Wikimedia Commons",
+          "text": "{{subst:Su Commons}} --~~~~"
+        },
+        {
+          "name": "Svuotamento talk",
+          "fields": [],
+          "subject": "Pagine di discussione",
+          "title": "Svuotamento della pagina di discussione",
+          "text": "{{subst:Svuotamento talk}} --~~~~"
+        },
+        {
+          "name": "Template obsoleto utente",
+          "fields": [],
+          "subject": "Template",
+          "title": "Template utente obsoleto",
+          "text": "{{subst:Template obsoleto utente}} --~~~~"
+        },
+        {
+          "name": "Tempo relativo",
+          "fields": [],
+          "subject": "Stile enciclopedico",
+          "title": "Uso di espressioni a tempo relativo",
+          "text": "{{subst:TempoRelativo}} --~~~~"
+        },
+        {
+          "name": "Traduzione",
+          "fields": [],
+          "subject": "Traduzioni",
+          "title": "Attribuzione e linee guida per le traduzioni",
+          "text": "{{subst:Traduzione}} --~~~~"
+        },
+        {
+          "name": "Trota",
+          "fields": [],
+          "subject": "Umorismo",
+          "title": "Prendi una trota in faccia!",
+          "text": "{{subst:Trota}} --~~~~"
+        },
+        {
+          "name": "Uso template discussioni",
+          "fields": [],
+          "subject": "Template",
+          "title": "Uso dei template nelle discussioni e votazioni",
+          "text": "{{subst:Uso template per le discussioni e votazioni}} --~~~~"
+        },
+        {
+          "name": "Wikitapiro",
+          "fields": [],
+          "subject": "Umorismo",
+          "title": "Un wikitapiro per te",
+          "text": "{{subst:Wikitapiro}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "vandalismi",
+      "options": [
+        {
+          "name": "Attacco",
+          "fields": [],
+          "subject": "Attacchi personali",
+          "title": "Attacchi personali",
+          "text": "{{subst:Attacco}} --~~~~"
+        },
+        {
+          "name": "Avviso abusefilter",
+          "fields": [],
+          "subject": "Filtro anti-abusi",
+          "title": "Attivazione del filtro anti-abusi",
+          "text": "{{subst:Avviso abusefilter}} --~~~~"
+        },
+        {
+          "name": "Avvisoavvisi",
+          "fields": [],
+          "subject": "Rimozione avvisi",
+          "title": "Rimozione di avvisi di servizio",
+          "text": "{{subst:Avvisoavvisi}} --~~~~"
+        },
+        {
+          "name": "Avviso B",
+          "fields": [],
+          "subject": "Avviso",
+          "title": "Avviso",
+          "text": "{{subst:AvvisoB}} --~~~~"
+        },
+        {
+          "name": "Blocco",
+          "fields": [],
+          "subject": "Blocco utente",
+          "title": "Blocco dell'utenza",
+          "text": "{{subst:Blocco}} --~~~~"
+        },
+        {
+          "name": "Bloccofastweb",
+          "fields": [],
+          "subject": "Blocco utente",
+          "title": "Blocco utenza Fastweb",
+          "text": "{{subst:Bloccofastweb}} --~~~~"
+        },
+        {
+          "name": "Blocco Infinito",
+          "fields": [],
+          "subject": "Blocco infinito",
+          "title": "Blocco infinito dell'utenza",
+          "text": "{{subst:BloccoInfinito}} --~~~~"
+        },
+        {
+          "name": "Dati personali",
+          "fields": [],
+          "subject": "Privacy",
+          "title": "Inserimento di dati personali",
+          "text": "{{subst:Dati personali}} --~~~~"
+        },
+        {
+          "name": "IPvandalismo",
+          "fields": [],
+          "subject": "Vandalismo",
+          "title": "Vandalismi da IP",
+          "text": "{{subst:IPvandalismo}} --~~~~"
+        },
+        {
+          "name": "Non enciclopedico",
+          "fields": [],
+          "subject": "Enciclopedicità",
+          "title": "Contenuto non enciclopedico",
+          "text": "{{subst:Non enciclopedico}} --~~~~"
+        },
+        {
+          "name": "OP scad",
+          "fields": [],
+          "subject": "Opere protette",
+          "title": "Scadenza termini opere protette",
+          "text": "{{subst:OP scad}} --~~~~"
+        },
+        {
+          "name": "Promozionale",
+          "fields": [],
+          "subject": "Contenuto promozionale",
+          "title": "Contenuto promozionale o pubblicitario",
+          "text": "{{subst:Promozionale}} --~~~~"
+        },
+        {
+          "name": "Rc",
+          "fields": [],
+          "subject": "Avviso",
+          "title": "Avviso di controllo modifiche",
+          "text": "{{subst:Rc}} --~~~~"
+        },
+        {
+          "name": "Rimozione Contenuti",
+          "fields": [],
+          "subject": "Rimozione contenuti",
+          "title": "Rimozione ingiustificata di contenuti",
+          "text": "{{subst:RimozioneContenuti}} --~~~~"
+        },
+        {
+          "name": "Senza senso",
+          "fields": [],
+          "subject": "Contenuto illeggibile o senza senso",
+          "title": "Inserimento di testo senza senso",
+          "text": "{{subst:Senza senso}} --~~~~"
+        },
+        {
+          "name": "Sockpuppet bloccato",
+          "fields": [],
+          "subject": "Utenze multiple",
+          "title": "Utenza multipla bloccata",
+          "text": "{{subst:Sockpuppet bloccato}} --~~~~"
+        },
+        {
+          "name": "Test",
+          "fields": [],
+          "subject": "Pagine di prova",
+          "title": "Test / Pagine di prova",
+          "text": "{{subst:Test}} --~~~~"
+        },
+        {
+          "name": "Turpiloquio",
+          "fields": [],
+          "subject": "Linguaggio inappropriato",
+          "title": "Uso di turpiloquio o linguaggio offensivo",
+          "text": "{{subst:Turpiloquio}} --~~~~"
+        },
+        {
+          "name": "Vandalismo",
+          "fields": [],
+          "subject": "Vandalismo",
+          "title": "Avviso di vandalismo",
+          "text": "{{subst:Vandalismo}} --~~~~"
+        },
+        {
+          "name": "Vandalo recidivo",
+          "fields": [],
+          "subject": "Vandalismo",
+          "title": "Vandalo recidivo",
+          "text": "{{subst:Vandalo recidivo}} --~~~~"
+        },
+        {
+          "name": "WMF-legal banned user",
+          "fields": [],
+          "subject": "Blocco WMF",
+          "title": "Utenza bloccata da WMF",
+          "text": "{{subst:WMF-legal banned user}} --~~~~"
+        },
+        {
+          "name": "Yc",
+          "fields": [],
+          "subject": "Cartellino giallo",
+          "title": "Cartellino giallo (avviso generale)",
+          "text": "{{subst:Yc}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "cosa non mettere",
+      "options": [
+        {
+          "name": "WN(X) - Avviso generico Cosa Wikipedia non è",
+          "fields": [
+            {
+              "name": "lettera",
+              "type": 1,
+              "description": "lettera/codice WN (es. B, C, D...)",
+              "required": true
+            }
+          ],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Cosa Wikipedia non è",
+          "text": "{{subst:WN($lettera$)}} --~~~~"
+        },
+        {
+          "name": "Avviso commento - Wikipedia non è un forum o blog",
+          "fields": [],
+          "subject": "Commenti nelle pagine",
+          "title": "Commenti nelle voci o discussioni",
+          "text": "{{subst:Avviso commento}} --~~~~"
+        },
+        {
+          "name": "WNB - Wikipedia non è un blog, un forum o un social network",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un blog o un forum",
+          "text": "{{subst:WNB}} --~~~~"
+        },
+        {
+          "name": "BNA - Biografie di persone viventi / non enciclopediche",
+          "fields": [],
+          "subject": "Biografie",
+          "title": "Biografie di persone viventi",
+          "text": "{{subst:BNA}} --~~~~"
+        },
+        {
+          "name": "WNCV - Wikipedia non è una raccolta di curriculum vitae",
+          "fields": [],
+          "subject": "Curriculum vitae",
+          "title": "Wikipedia non è una raccolta di curriculum vitae",
+          "text": "{{subst:WNCV}} --~~~~"
+        },
+        {
+          "name": "WNDM - Wikipedia non è un dizionario o un manuale",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un dizionario o un manuale",
+          "text": "{{subst:WNDM}} --~~~~"
+        },
+        {
+          "name": "WND - Wikipedia non è un dizionario",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un dizionario",
+          "text": "{{subst:WND}} --~~~~"
+        },
+        {
+          "name": "WNF - Wikipedia non è un palco per comizi",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un palco per comizi",
+          "text": "{{subst:WNF}} --~~~~"
+        },
+        {
+          "name": "WNN - Wikipedia non è un notiziario (recentismo)",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un notiziario",
+          "text": "{{subst:WNN}} --~~~~"
+        },
+        {
+          "name": "NoWebHost - Wikipedia non è un servizio di hosting gratuito",
+          "fields": [],
+          "subject": "Pagina utente",
+          "title": "Wikipedia non è un servizio di hosting",
+          "text": "{{subst:NoWebHost}} --~~~~"
+        },
+        {
+          "name": "WNO - Wikipedia non è un'opera originale (ricerche originali)",
+          "fields": [],
+          "subject": "Ricerche originali",
+          "title": "Wikipedia non è una fonte primaria / ricerca originale",
+          "text": "{{subst:WNO}} --~~~~"
+        },
+        {
+          "name": "WNO/en - Wikipedia is not for original research (inglese)",
+          "fields": [],
+          "subject": "Original research",
+          "title": "No original research",
+          "text": "{{subst:WNO/en}} --~~~~"
+        },
+        {
+          "name": "WNP - Wikipedia non è un mezzo di promozione o pubblicità",
+          "fields": [],
+          "subject": "Promozione",
+          "title": "Wikipedia non è un mezzo di promozione",
+          "text": "{{subst:WNP}} --~~~~"
+        },
+        {
+          "name": "WNRI - Wikipedia non è una raccolta indiscriminata di informazioni",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è una raccolta indiscriminata di informazioni",
+          "text": "{{subst:WNRI}} --~~~~"
+        },
+        {
+          "name": "WNR - Wikipedia non è una raccolta di ricette o manuali",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un ricettario o un manuale",
+          "text": "{{subst:WNR}} --~~~~"
+        },
+        {
+          "name": "WNRO - Wikipedia non è una raccolta di ricerche originali",
+          "fields": [],
+          "subject": "Ricerche originali",
+          "title": "Niente ricerche originali",
+          "text": "{{subst:WNRO}} --~~~~"
+        },
+        {
+          "name": "WNT - Wikipedia non è un testo scolastico o un manuale",
+          "fields": [],
+          "subject": "Cosa Wikipedia non è",
+          "title": "Wikipedia non è un manuale o testo scolastico",
+          "text": "{{subst:WNT}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "benvenuto",
+      "options": [
+        {
+          "name": "Benvebot",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvebot}} --~~~~"
+        },
+        {
+          "name": "Benvenuto",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto}} --~~~~"
+        },
+        {
+          "name": "BenvenutoAT",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:BenvenutoAT}} --~~~~"
+        },
+        {
+          "name": "BenvenutoIP",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:BenvenutoIP}} --~~~~"
+        },
+        {
+          "name": "Welcome (inglese)",
+          "fields": [],
+          "subject": "Welcome!",
+          "title": "Welcome!",
+          "text": "{{subst:Welcome}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Antica Roma",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Antica Roma}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Astronautica",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Astronautica}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Astronomia",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Astronomia}} --~~~~"
+        },
+        {
+          "name": "Benvenuto Progetto Aviazione",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto Progetto Aviazione}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Basilicata",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Basilicata}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Sport/Calcio",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Sport/Calcio}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Chimica",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Chimica}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Economia",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Economia}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Fisica",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Fisica}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Giappone",
+          "fields": [],
+          "subject": "Invito al Progetto Giappone",
+          "title": "Invito al Progetto Giappone",
+          "text": "{{subst:Invito Progetto Giappone}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:GLAM",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:GLAM}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Guerra",
+          "fields": [],
+          "subject": "Invito al Progetto Guerra",
+          "title": "Invito al Progetto Guerra",
+          "text": "{{subst:Invito Progetto Guerra}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Ingegneria",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Ingegneria}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Isole",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Isole}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Medicina",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Medicina}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Meteorologia",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Meteorologia}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Punk",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Punk}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Reggae",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Reggae}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Sport/Rugby",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Sport/Rugby}} --~~~~"
+        },
+        {
+          "name": "Benvenuto - progetto:Trasporti",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:Benvenuto - progetto:Trasporti}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "copyviol",
+      "options": [
+        {
+          "name": "Avvisocontrolcopyfile",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Controllo copyright file",
+          "title": "Controllo copyright file",
+          "text": "{{subst:Avvisocontrolcopyfile|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisocontrolcopy",
+          "fields": [
+            {
+              "name": "voce",
+              "type": 1,
+              "description": "titolo della voce",
+              "required": true
+            }
+          ],
+          "subject": "Controllo copyright",
+          "title": "Controllo copyright",
+          "text": "{{subst:Avvisocontrolcopy|$voce$}} --~~~~"
+        },
+        {
+          "name": "Avvisocopyviol",
+          "fields": [
+            {
+              "name": "voce",
+              "type": 1,
+              "description": "titolo della voce",
+              "required": true
+            },
+            {
+              "name": "url",
+              "type": 1,
+              "description": "URL o fonte copiata",
+              "required": false
+            }
+          ],
+          "subject": "Violazione di copyright",
+          "title": "Violazione di copyright",
+          "text": "{{subst:Avvisocopyviol|voce=$voce$|url=$url$}} --~~~~"
+        },
+        {
+          "name": "Avvisocopyviol2",
+          "fields": [
+            {
+              "name": "voce",
+              "type": 1,
+              "description": "titolo della voce",
+              "required": true
+            }
+          ],
+          "subject": "Violazione di copyright",
+          "title": "Violazione di copyright",
+          "text": "{{subst:Avvisocopyviol2|$voce$}} --~~~~"
+        },
+        {
+          "name": "AvvisoEDP",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "EDP",
+          "title": "File non conforme all'EDP",
+          "text": "{{subst:AvvisoEDP|$file$}} --~~~~"
+        },
+        {
+          "name": "AvvisoEDP3",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "EDP",
+          "title": "File non conforme all'EDP",
+          "text": "{{subst:AvvisoEDP3|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisoimmagine",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Informazioni mancanti immagine",
+          "title": "Informazioni mancanti sul file",
+          "text": "{{subst:Avvisoimmagine|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisoimmagine2",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Licenza immagine",
+          "title": "Problema con la licenza del file",
+          "text": "{{subst:Avvisoimmagine2|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisoimmagine3",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Fonte immagine",
+          "title": "Fonte mancante per il file",
+          "text": "{{subst:Avvisoimmagine3|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisomarchio",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Marchio registrato",
+          "title": "Informazioni sul marchio registrato",
+          "text": "{{subst:Avvisomarchio|$file$}} --~~~~"
+        },
+        {
+          "name": "Avvisomarchio2",
+          "fields": [
+            {
+              "name": "file",
+              "type": 1,
+              "description": "nome del file",
+              "required": true
+            }
+          ],
+          "subject": "Marchio registrato",
+          "title": "Informazioni sul marchio registrato",
+          "text": "{{subst:Avvisomarchio2|$file$}} --~~~~"
+        },
+        {
+          "name": "AvvisoTicket",
+          "fields": [
+            {
+              "name": "voce_o_file",
+              "type": 1,
+              "description": "titolo voce o file",
+              "required": true
+            }
+          ],
+          "subject": "Ticket VRTS",
+          "title": "Autorizzazione VRTS (Ticket)",
+          "text": "{{subst:AvvisoTicket|$voce_o_file$}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "utenti anonimi",
+      "options": [
+        {
+          "name": "BenvenutoAT",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:BenvenutoAT}} --~~~~"
+        },
+        {
+          "name": "BenvenutoIP",
+          "fields": [],
+          "subject": "Benvenuto!",
+          "title": "Benvenuto!",
+          "text": "{{subst:BenvenutoIP}} --~~~~"
+        },
+        {
+          "name": "Bloccofastweb",
+          "fields": [],
+          "subject": "Blocco utente",
+          "title": "Blocco utenza Fastweb",
+          "text": "{{subst:Bloccofastweb}} --~~~~"
+        },
+        {
+          "name": "IPcondiviso",
+          "fields": [],
+          "subject": "IP condiviso",
+          "title": "Indirizzo IP condiviso",
+          "text": "{{subst:IPcondiviso}} --~~~~"
+        },
+        {
+          "name": "IPvandalismo",
+          "fields": [],
+          "subject": "Vandalismo",
+          "title": "Vandalismi da IP",
+          "text": "{{subst:IPvandalismo}} --~~~~"
+        },
+        {
+          "name": "Loggati",
+          "fields": [],
+          "subject": "Invito a registrarsi / accedere",
+          "title": "Invito ad accedere con la propria utenza",
+          "text": "{{subst:Loggati}} --~~~~"
+        },
+        {
+          "name": "OP scad",
+          "fields": [],
+          "subject": "Opere protette",
+          "title": "Scadenza termini opere protette",
+          "text": "{{subst:OP scad}} --~~~~"
+        },
+        {
+          "name": "Vandalo recidivo",
+          "fields": [],
+          "subject": "Vandalismo",
+          "title": "Vandalo recidivo",
+          "text": "{{subst:Vandalo recidivo}} --~~~~"
+        }
+      ]
+    },
+    {
+      "name": "inviti progetti",
+      "options": [
+        {
+          "name": "Censimento progetto",
+          "fields": [
+            {
+              "name": "progetto",
+              "type": 1,
+              "description": "nome del progetto",
+              "required": true
+            }
+          ],
+          "subject": "Censimento progetto",
+          "title": "Censimento partecipanti al progetto",
+          "text": "{{subst:Censimento progetto|$progetto$}} --~~~~"
+        },
+        {
+          "name": "Conferma adesione progetto",
+          "fields": [
+            {
+              "name": "progetto",
+              "type": 1,
+              "description": "nome del progetto",
+              "required": true
+            }
+          ],
+          "subject": "Conferma adesione progetto",
+          "title": "Conferma adesione al progetto",
+          "text": "{{subst:Conferma adesione progetto|$progetto$}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Accoglienza",
+          "fields": [],
+          "subject": "Invito al Progetto Accoglienza",
+          "title": "Invito al Progetto Accoglienza",
+          "text": "{{subst:Invito Progetto Accoglienza}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Aree protette",
+          "fields": [],
+          "subject": "Invito al Progetto Aree protette",
+          "title": "Invito al Progetto Aree protette",
+          "text": "{{subst:Invito Progetto Aree protette}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Astronomia",
+          "fields": [],
+          "subject": "Invito al Progetto Astronomia",
+          "title": "Invito al Progetto Astronomia",
+          "text": "{{subst:Invito Progetto Astronomia}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Atletica leggera",
+          "fields": [],
+          "subject": "Invito al Progetto Atletica leggera",
+          "title": "Invito al Progetto Atletica leggera",
+          "text": "{{subst:Invito Progetto Atletica leggera}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Aviazione",
+          "fields": [],
+          "subject": "Invito al Progetto Aviazione",
+          "title": "Invito al Progetto Aviazione",
+          "text": "{{subst:Invito Progetto Aviazione}} --~~~~"
+        },
+        {
+          "name": "Avviso censimento",
+          "fields": [
+            {
+              "name": "progetto",
+              "type": 1,
+              "description": "nome del progetto",
+              "required": true
+            }
+          ],
+          "subject": "Avviso censimento",
+          "title": "Avviso censimento progetto",
+          "text": "{{subst:Avviso censimento|$progetto$}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Calcio a 5",
+          "fields": [],
+          "subject": "Invito al Progetto Calcio a 5",
+          "title": "Invito al Progetto Calcio a 5",
+          "text": "{{subst:Invito Progetto Calcio a 5}} --~~~~"
+        },
+        {
+          "name": "Progetto Cattolicesimo/adozioni",
+          "fields": [],
+          "subject": "Progetto Cattolicesimo",
+          "title": "Progetto Cattolicesimo",
+          "text": "{{subst:Progetto Cattolicesimo/adozioni}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Corea",
+          "fields": [],
+          "subject": "Invito al Progetto Corea",
+          "title": "Invito al Progetto Corea",
+          "text": "{{subst:Invito Progetto Corea}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Cucina",
+          "fields": [],
+          "subject": "Invito al Progetto Cucina",
+          "title": "Invito al Progetto Cucina",
+          "text": "{{subst:Invito Progetto Cucina}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Emilia e Romagna",
+          "fields": [],
+          "subject": "Invito al Progetto Emilia e Romagna",
+          "title": "Invito al Progetto Emilia e Romagna",
+          "text": "{{subst:Invito Progetto Emilia e Romagna}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Enologia",
+          "fields": [],
+          "subject": "Invito al Progetto Enologia",
+          "title": "Invito al Progetto Enologia",
+          "text": "{{subst:Invito Progetto Enologia}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Filosofia",
+          "fields": [],
+          "subject": "Invito al Progetto Filosofia",
+          "title": "Invito al Progetto Filosofia",
+          "text": "{{subst:Invito Progetto Filosofia}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Fotografia",
+          "fields": [],
+          "subject": "Invito al Progetto Fotografia",
+          "title": "Invito al Progetto Fotografia",
+          "text": "{{subst:Invito Progetto Fotografia}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Giappone",
+          "fields": [],
+          "subject": "Invito al Progetto Giappone",
+          "title": "Invito al Progetto Giappone",
+          "text": "{{subst:Invito Progetto Giappone}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Guerra",
+          "fields": [],
+          "subject": "Invito al Progetto Guerra",
+          "title": "Invito al Progetto Guerra",
+          "text": "{{subst:Invito Progetto Guerra}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Isole",
+          "fields": [],
+          "subject": "Invito al Progetto Isole",
+          "title": "Invito al Progetto Isole",
+          "text": "{{subst:Invito Progetto Isole}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Istruzione",
+          "fields": [],
+          "subject": "Invito al Progetto Istruzione",
+          "title": "Invito al Progetto Istruzione",
+          "text": "{{subst:Invito Progetto Istruzione}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto LGBT",
+          "fields": [],
+          "subject": "Invito al Progetto LGBT",
+          "title": "Invito al Progetto LGBT",
+          "text": "{{subst:Invito Progetto LGBT}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Pornografia",
+          "fields": [],
+          "subject": "Invito al Progetto Pornografia",
+          "title": "Invito al Progetto Pornografia",
+          "text": "{{subst:Invito Progetto Pornografia}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Pugilato",
+          "fields": [],
+          "subject": "Invito al Progetto Pugilato",
+          "title": "Invito al Progetto Pugilato",
+          "text": "{{subst:Invito Progetto Pugilato}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Punk",
+          "fields": [],
+          "subject": "Invito al Progetto Punk",
+          "title": "Invito al Progetto Punk",
+          "text": "{{subst:Invito Progetto Punk}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Reggae",
+          "fields": [],
+          "subject": "Invito al Progetto Reggae",
+          "title": "Invito al Progetto Reggae",
+          "text": "{{subst:Invito Progetto Reggae}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Trasporti",
+          "fields": [],
+          "subject": "Invito al Progetto Trasporti",
+          "title": "Invito al Progetto Trasporti",
+          "text": "{{subst:Invito Progetto Trasporti}} --~~~~"
+        },
+        {
+          "name": "Invito Progetto Valle d'Aosta",
+          "fields": [],
+          "subject": "Invito al Progetto Valle d'Aosta",
+          "title": "Invito al Progetto Valle d'Aosta",
+          "text": "{{subst:Invito Progetto Valle d'Aosta}} --~~~~"
+        }
+      ]
+    }
+  ],
+  "motiviUndo": [
+    { "id": "vandalismo", "label": "Vandalismo", "text": "{{Vandalismo}}" },
+    { "id": "cartellino", "label": "Cartellino giallo", "text": "{{Yc}}" },
+    { "id": "test", "label": "Test / Prova", "text": "{{Test}}" },
+    { "id": "rimozione contenuti", "label": "Rimozione contenuti", "text": "{{RimozioneContenuti}}" },
+    { "id": "rimozione avvisi", "label": "Rimozione avvisi", "text": "{{Avvisoavvisi}}" },
+    { "id": "debug", "label": "Debug", "text": "Test" },
+    { "id": "altro", "label": "Altro (solo annullamento)", "text": null }
+  ],
+  "segnalazioni": [
+    { "id": "vandalismo", "label": "Vandalismo in corso", "target": "Wikipedia:Vandalismi_in_corso", "value": "{{vandalo|$utente$}} $motivo$ --~~~~" },
+    { "id": "NUI", "label": "Nome utente inappropriato", "target": "Wikipedia:Segnalazioni_NUI", "value": "{{Reported|$utente$}} $motivo$ --~~~~" }
+  ]
+}
